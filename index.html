@@ -157,30 +157,26 @@
             <h2>Proof of Work</h2>
 
             <div class="project">
+                <h3>Project Sentinel: Automated Threat Intelligence</h3>
+                <div class="tech-stack">n8n | Local Inference (Ollama) | Vector Memory | SQL | RTX 9070 XT</div>
+                <p>Built an air-gapped security pipeline running entirely on local hardware. Rather than relying on highly volatile motion triggers, the system utilizes vector memory to establish "Pattern of Life" baselines, drastically reducing false positives. The entire orchestration logic, database logging, and vision analysis is handled via a complex n8n pipeline.</p>
+                <img src="n8n-workflow.png" alt="Project Sentinel n8n Workflow" style="width: 100%; border-radius: 4px; margin-top: 1.5rem; border: 1px solid #30363d;">
+            </div>
+
+            <div class="project">
+                <h3>Project Pitka: System 2 Inference Wrapper</h3>
+                <div class="tech-stack">Python | Prompt Engineering | Logic Scoring</div>
+                <p>Engineered a "System 2" inference wrapper to mitigate hallucination and logic failures in local, lower-parameter LLMs. By utilizing a temperature-flipping sampling strategy and forcing the model to evaluate its own logic paths through confidence scoring, the system massively increases reasoning accuracy.</p>
+                <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*rWIrvmW8-8E0_0vEyLxZGQ.png" alt="Project Pitka Architecture" style="width: 100%; border-radius: 4px; margin-top: 1.5rem; border: 1px solid #30363d;">
+                <p style="margin-top: 1rem; font-size: 0.95rem;">
+                    <a href="https://medium.com/@collofthewild/i-couldnt-remember-who-starred-in-the-love-guru-so-i-built-a-system-2-for-my-local-llm-57392da6ac29" target="_blank" style="color: #58a6ff; text-decoration: none; border-bottom: 1px solid #58a6ff;">Read the full technical breakdown on Medium &rarr;</a>
+                </p>
+            </div>
+
+            <div class="project">
                 <h3>Orion Dash-Cam API Pipeline</h3>
                 <div class="tech-stack">Python | Gemini-3-Flash | API Architecture</div>
-                <p>Architected and deployed an automated computer vision API to replace an unscalable manual audit process. The system now autonomously processes over 5,000 dash-cam images daily, identifying risk factors and standardizing data ingestion.</p>
-                <div class="image-placeholder">
-                    [Insert a code snippet of your API call, or a sanitized JSON response here]
-                </div>
-            </div>
-
-            <div class="project">
-                <h3>Project Sentinel</h3>
-                <div class="tech-stack">Local Inference | Computer Vision | Vector Memory | RTX 9070 XT</div>
-                <p>Built an air-gapped security pipeline running entirely on local hardware. Rather than relying on highly volatile motion triggers, the system utilizes vector memory to establish "Pattern of Life" baselines, drastically reducing false positives.</p>
-                <div class="image-placeholder">
-                    [Insert terminal output, a diagram, or a screenshot of the hardware/local UI here]
-                </div>
-            </div>
-
-            <div class="project">
-                <h3>Automated LLM Data Ingestion</h3>
-                <div class="tech-stack">n8n | Azure Document Intelligence | PostgreSQL</div>
-                <p>Engineered complex orchestration workflows to extract legacy PDFs into structured SQL datasets, bridging the gap between raw unstructured data and actionable business logic.</p>
-                <div class="image-placeholder">
-                    [Insert a zoomed-out screenshot of an impressive n8n node layout here]
-                </div>
+                <p>Architected and deployed an automated computer vision API to replace an unscalable manual audit process. The system now autonomously processes over 5,000 dash-cam images daily, identifying risk factors and standardizing data ingestion for enterprise fleets.</p>
             </div>
         </section>
 
