@@ -105,19 +105,20 @@
             font-family: monospace;
             margin-bottom: 1.5rem;
         }
-
-        .image-placeholder {
+        
+        .project img {
             width: 100%;
-            height: 250px;
-            background-color: #21262d;
-            border: 1px dashed #484f58;
             border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border: 1px solid #30363d;
+            margin-top: 1rem;
+        }
+        
+        .img-caption {
+            text-align: center;
+            font-size: 0.85rem;
             color: #8b949e;
-            margin-top: 1.5rem;
-            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
         }
 
         footer {
@@ -144,7 +145,7 @@
         </header>
 
         <section class="manifesto">
-            <p>The traditional academic and professional infrastructure was not built for how my brain operates. I vividly remember being a kid, sitting at the kitchen table from 2:30 PM until 10:00 PM, choosing to just sit and think rather than fill out a simple ten-question worksheet. My ADHD meant my mind naturally optimized for intense hyperfocus and complex pattern recognition, but it stalled when forced into linear, performative frameworks. I floundered in systems that rewarded compliance over raw problem-solving.</p>
+            <p>The traditional academic and professional infrastructure was not built for how my brain operates. I vividly remember being a kid, sitting at the kitchen table from 2:30 PM until 10:00 PM, choosing to just sit and think rather than fill out a simple ten-question worksheet. My ADHD meant my mind naturally optimized for intense hyperfocus and complex pattern recognition, but it redlined when forced into linear, performative frameworks. I floundered in systems that rewarded compliance over raw problem-solving.</p>
             
             <p><strong>Then, the AI landscape shifted. Partnering with Large Language Models was like pouring rocket fuel on my brain.</strong></p>
             
@@ -159,16 +160,24 @@
             <div class="project">
                 <h3>Project Sentinel: Automated Threat Intelligence</h3>
                 <div class="tech-stack">n8n | Local Inference (Ollama) | Vector Memory | SQL | RTX 9070 XT</div>
-                <p>Built an air-gapped security pipeline running entirely on local hardware. Rather than relying on highly volatile motion triggers, the system utilizes vector memory to establish "Pattern of Life" baselines, drastically reducing false positives. The entire orchestration logic, database logging, and vision analysis is handled via a complex n8n pipeline.</p>
-                <img src="n8n-workflow.png" alt="Project Sentinel n8n Workflow" style="width: 100%; border-radius: 4px; margin-top: 1.5rem; border: 1px solid #30363d;">
+                <p>Built an air-gapped security pipeline running entirely on local hardware. Rather than relying on highly volatile motion triggers, the system utilizes vector memory to establish "Pattern of Life" baselines, drastically reducing false positives. The architecture spans from workflow orchestration to local inference and final intelligence delivery.</p>
+                
+                <img src="flow.png" alt="Project Sentinel n8n Workflow">
+                <div class="img-caption">Orchestration pipeline built in n8n</div>
+                
+                <img src="terminal.jpeg" alt="Project Sentinel Terminal Inference">
+                <div class="img-caption">Local inference execution on the RTX 9070 XT</div>
+                
+                <img src="intel.png" alt="Project Sentinel Discord Intel Report">
+                <div class="img-caption" style="margin-bottom: 0;">Automated intelligence report pushed to Discord webhook</div>
             </div>
 
             <div class="project">
                 <h3>Project Pitka: System 2 Inference Wrapper</h3>
                 <div class="tech-stack">Python | Prompt Engineering | Logic Scoring</div>
                 <p>Engineered a "System 2" inference wrapper to mitigate hallucination and logic failures in local, lower-parameter LLMs. By utilizing a temperature-flipping sampling strategy and forcing the model to evaluate its own logic paths through confidence scoring, the system massively increases reasoning accuracy.</p>
-                <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*rWIrvmW8-8E0_0vEyLxZGQ.png" alt="Project Pitka Architecture" style="width: 100%; border-radius: 4px; margin-top: 1.5rem; border: 1px solid #30363d;">
-                <p style="margin-top: 1rem; font-size: 0.95rem;">
+                <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*rWIrvmW8-8E0_0vEyLxZGQ.png" alt="Project Pitka Architecture">
+                <p style="margin-top: 1.5rem; font-size: 0.95rem;">
                     <a href="https://medium.com/@collofthewild/i-couldnt-remember-who-starred-in-the-love-guru-so-i-built-a-system-2-for-my-local-llm-57392da6ac29" target="_blank" style="color: #58a6ff; text-decoration: none; border-bottom: 1px solid #58a6ff;">Read the full technical breakdown on Medium &rarr;</a>
                 </p>
             </div>
