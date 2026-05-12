@@ -3,168 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Coll Manson | AI Solutions Engineer</title>
+    <title>James Coll Manson | Builder</title>
     <style>
         :root {
             --bg-color: #0d1117;
             --text-color: #c9d1d9;
+            --heading-color: #ffffff;
             --accent-color: #58a6ff;
-            --card-bg: #161b22;
             --border-color: #30363d;
+            --card-bg: #161b22;
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.6;
+            line-height: 1.8;
             margin: 0;
             padding: 0;
         }
 
-        header {
-            padding: 4rem 2rem;
-            max-width: 800px;
+        .container {
+            max-width: 750px;
             margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        header {
+            margin-bottom: 4rem;
             border-bottom: 1px solid var(--border-color);
+            padding-bottom: 2rem;
         }
 
         h1 {
             font-size: 2.5rem;
-            color: #ffffff;
-            margin-bottom: 0.5rem;
+            color: var(--heading-color);
+            margin-bottom: 0.2rem;
+            letter-spacing: -0.5px;
         }
 
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 400;
-            color: var(--accent-color);
-            margin-top: 0;
+        .subtitle {
+            font-size: 1.2rem;
+            color: #8b949e;
+            margin-bottom: 1.5rem;
+            font-family: monospace;
         }
 
-        .contact-links a {
+        .links a {
             color: var(--text-color);
             text-decoration: none;
             margin-right: 1.5rem;
             border-bottom: 1px dashed var(--border-color);
+            font-size: 0.95rem;
         }
 
-        .contact-links a:hover {
+        .links a:hover {
             color: var(--accent-color);
             border-bottom-color: var(--accent-color);
         }
 
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
+        .manifesto {
+            font-size: 1.1rem;
+            margin-bottom: 4rem;
         }
 
-        .section-title {
-            font-size: 1.75rem;
-            color: #ffffff;
-            margin-top: 3rem;
+        .manifesto p {
             margin-bottom: 1.5rem;
         }
 
-        .project-card {
+        .manifesto strong {
+            color: var(--heading-color);
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: var(--heading-color);
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .project {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
-            border-radius: 8px;
+            border-radius: 6px;
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
-        .project-card h3 {
+        .project h3 {
             margin-top: 0;
-            color: #ffffff;
+            color: var(--accent-color);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
         }
 
         .tech-stack {
             font-size: 0.85rem;
             color: #8b949e;
-            margin-bottom: 1rem;
             font-family: monospace;
+            margin-bottom: 1.5rem;
         }
 
-        .project-image-placeholder {
+        .image-placeholder {
             width: 100%;
-            height: 300px;
+            height: 250px;
             background-color: #21262d;
-            border: 1px dashed var(--border-color);
+            border: 1px dashed #484f58;
             border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #8b949e;
             margin-top: 1.5rem;
+            font-size: 0.9rem;
         }
 
         footer {
+            margin-top: 4rem;
             text-align: center;
-            padding: 3rem;
             color: #8b949e;
             font-size: 0.9rem;
             border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>James Coll Manson</h1>
-        <h2>Applied AI Solutions Engineer</h2>
-        <p>Architecting production-scale AI pipelines, containerized infrastructure, and agentic workflows through first-principles engineering.</p>
-        <div class="contact-links">
-            <a href="mailto:jamesmanson34@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/james-m-76974a9a/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/collofthewild" target="_blank">GitHub</a>
-        </div>
-    </header>
-
-    <main>
-        <h2 class="section-title">Production & Enterprise Solutions</h2>
-
-        <div class="project-card">
-            <h3>Orion Dash-Cam API Pipeline</h3>
-            <div class="tech-stack">Python | Gemini-3-Flash | API Architecture</div>
-            <p>[We will add the narrative here detailing how you automated the 3-person audit team.]</p>
-            <div class="project-image-placeholder">
-                [Insert architectural diagram or sanitized API response screenshot here]
+    <div class="container">
+        <header>
+            <h1>James Coll Manson</h1>
+            <div class="subtitle">Applied AI Solutions Engineer</div>
+            <div class="links">
+                <a href="mailto:jamesmanson34@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/james-m-76974a9a/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/collofthewild" target="_blank">GitHub</a>
             </div>
-        </div>
+        </header>
 
-        <div class="project-card">
-            <h3>Automated LLM Data Ingestion & OCR</h3>
-            <div class="tech-stack">Azure Document Intelligence | n8n | PostgreSQL</div>
-            <p>[We will add the narrative here regarding the commercial auto insurance quote ingestion and legacy PDF standardization.]</p>
-            <div class="project-image-placeholder">
-                [Insert n8n workflow canvas screenshot here]
+        <section class="manifesto">
+            <p>The traditional academic and professional infrastructure was not built for how my brain operates. I vividly remember being a kid, sitting at the kitchen table from 2:30 PM until 10:00 PM, choosing to just sit and think rather than fill out a simple ten-question worksheet. My ADHD meant my mind naturally optimized for intense hyperfocus and complex pattern recognition, but it redlined when forced into linear, performative frameworks. I floundered in systems that rewarded compliance over raw problem-solving.</p>
+            
+            <p><strong>Then, the AI landscape shifted. Partnering with Large Language Models was like pouring rocket fuel on my brain.</strong></p>
+            
+            <p>By sharing a mind with AI, the traditional bottlenecks of syntax and memorization evaporated. I was no longer constrained by the rigid barriers of standard software engineering. I could finally take the complex, non-linear architectural solutions I saw in my head and translate them directly into production-grade enterprise infrastructure at blinding speed.</p>
+            
+            <p>Today, I don't just write code; I orchestrate systems. I look for operational bottlenecks and engineer systemic intelligence to solve them. While my background as a Military Intelligence Analyst taught me how to ingest complex, high-noise data streams under strict time constraints, my primary drive today is aggressively scaling commercial enterprise infrastructure.</p>
+        </section>
+
+        <section class="projects">
+            <h2>Proof of Work</h2>
+
+            <div class="project">
+                <h3>Orion Dash-Cam API Pipeline</h3>
+                <div class="tech-stack">Python | Gemini-3-Flash | API Architecture</div>
+                <p>Architected and deployed an automated computer vision API to replace an unscalable manual audit process. The system now autonomously processes over 5,000 dash-cam images daily, identifying risk factors and standardizing data ingestion.</p>
+                <div class="image-placeholder">
+                    [Insert a code snippet of your API call, or a sanitized JSON response here]
+                </div>
             </div>
-        </div>
 
-        <h2 class="section-title">Local Infrastructure & AI Routing</h2>
-
-        <div class="project-card">
-            <h3>Project Sentinel</h3>
-            <div class="tech-stack">Local Inference | Computer Vision | Vector Memory | RTX 9070 XT</div>
-            <p>[We will add the narrative here explaining the air-gapped security pipeline and "Pattern of Life" baselines.]</p>
-            <div class="project-image-placeholder">
-                [Insert terminal output or system architecture diagram here]
+            <div class="project">
+                <h3>Project Sentinel</h3>
+                <div class="tech-stack">Local Inference | Computer Vision | Vector Memory | RTX 9070 XT</div>
+                <p>Built an air-gapped security pipeline running entirely on local hardware. Rather than relying on highly volatile motion triggers, the system utilizes vector memory to establish "Pattern of Life" baselines, drastically reducing false positives.</p>
+                <div class="image-placeholder">
+                    [Insert terminal output, a diagram, or a screenshot of the hardware/local UI here]
+                </div>
             </div>
-        </div>
 
-        <div class="project-card">
-            <h3>Project Circadia</h3>
-            <div class="tech-stack">Hybrid Memory Router | QLoRA Fine-tuning</div>
-            <p>[We will add the narrative here discussing the nightly sleep cycle and factual vs. behavioral adaptation.]</p>
-        </div>
+            <div class="project">
+                <h3>Automated LLM Data Ingestion</h3>
+                <div class="tech-stack">n8n | Azure Document Intelligence | PostgreSQL</div>
+                <p>Engineered complex orchestration workflows to extract legacy PDFs into structured SQL datasets, bridging the gap between raw unstructured data and actionable business logic.</p>
+                <div class="image-placeholder">
+                    [Insert a zoomed-out screenshot of an impressive n8n node layout here]
+                </div>
+            </div>
+        </section>
 
-    </main>
-
-    <footer>
-        <p>&copy; 2026 James Coll Manson. Built for scale.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2026 James Coll Manson. Built for scale.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
