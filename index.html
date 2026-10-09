@@ -97,8 +97,7 @@
             </div>
             <div class="tech-pill-list">
                 <span class="tech-pill">n8n Orchestration</span>
-                <span class="tech-pill">Gemini Multimodal</span>
-                <span class="tech-pill">LlamaParse</span>
+                <span class="tech-pill">Gemini Multimodal API</span>
                 <span class="tech-pill">HubSpot v4 API</span>
                 <span class="tech-pill">sendAndWait Gate</span>
                 <span class="tech-pill">JavaScript Code Nodes</span>
@@ -106,7 +105,7 @@
             <div class="project-desc">
                 <p>Architected and scaled a mission-critical commercial auto insurance ingestion pipeline in n8n from a single carrier prototype to a fault-tolerant multi-carrier production system across Berkley Environmental, Berkley Southeast, Ascot, Everest, and Oryx:</p>
                 <ul>
-                    <li><strong>Dynamic Multimodal Extraction:</strong> Ingests policy quote packages via Outlook triggers, routing multi-page PDFs through LlamaParse and Gemini with carrier-specific extraction prompts and three-way confidence matching (Jaccard + state/domain scoring).</li>
+                    <li><strong>Dynamic Multimodal Extraction:</strong> Ingests policy quote packages via Outlook triggers, natively routing multi-page PDFs directly to Gemini with carrier-specific extraction prompts and three-way confidence matching (Jaccard + state/domain scoring).</li>
                     <li><strong>Human-in-the-Loop CRM Integrity:</strong> Bypassed brittle direct writes by engineering native <span class="code-inline">sendAndWait</span> approval gates that display a live visual diff between existing HubSpot records and extracted entities before persisting state.</li>
                     <li><strong>Advanced CRM Relational Mapping:</strong> Leveraged direct HTTP Request nodes over legacy abstraction nodes to implement HubSpot v4 labeled contact associations (<span class="code-inline">Wholesale Broker</span>, <span class="code-inline">Retail Agent</span>, <span class="code-inline">Underwriter</span>) with dynamic runtime label discovery.</li>
                 </ul>
@@ -170,13 +169,13 @@
             </div>
             <div class="tech-pill-list">
                 <span class="tech-pill">n8n Workflow Engine</span>
+                <span class="tech-pill">LlamaParse</span>
                 <span class="tech-pill">OpenWebUI / Ollama</span>
                 <span class="tech-pill">Vector Embeddings (Pinecone/ChromaDB)</span>
-                <span class="tech-pill">PostgreSQL</span>
                 <span class="tech-pill">NVIDIA RTX 3090</span>
             </div>
             <div class="project-desc">
-                <p>Architected an air-gapped, zero-cloud security monitoring pipeline running completely on local workstation hardware (MegaMainframe). Rather than relying on simple pixel-based motion triggers, the architecture leverages vector databases for semantic retrieval to map "Pattern of Life" baselines, filtering out 99% of false alerts before generating actionable tactical intelligence reports.</p>
+                <p>Architected an air-gapped, zero-cloud security monitoring pipeline running completely on local workstation hardware (MegaMainframe). Leveraged <strong>LlamaParse</strong> to structure complex local documentation for semantic retrieval via vector databases. Rather than relying on simple pixel-based motion triggers, the architecture maps "Pattern of Life" baselines, filtering out 99% of false alerts before generating actionable tactical intelligence reports.</p>
             </div>
 
             <div class="asset-container">
