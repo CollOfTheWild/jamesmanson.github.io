@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Coll Manson | Forward Deployed &amp; Systems Engineer</title>
-    <meta name="description" content="Portfolio of James Coll Manson — Forward Deployed Engineer specializing in n8n orchestration, production API integration, and enterprise automation architectures.">
+    <title>James Coll Manson | AI Workflow &amp; Systems Engineer</title>
+    <meta name="description" content="Portfolio of James Coll Manson — AI Workflow Engineer specializing in n8n orchestration, production API integration, and edge hardware autonomy.">
     <style>
         :root {
             --bg: #090d16;
@@ -22,308 +22,46 @@
             --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: var(--font-sans);
-            background-color: var(--bg);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 0;
-            margin: 0;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 920px;
-            margin: 0 auto;
-            padding: 3.5rem 1.5rem 6rem;
-        }
-
-        /* Top Header */
-        header {
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 2.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
-
-        h1 {
-            font-size: 2.35rem;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-            color: #ffffff;
-            margin-bottom: 0.35rem;
-        }
-
-        .title-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--n8n-accent);
-            font-family: var(--font-mono);
-            font-size: 0.95rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .title-badge::before {
-            content: "";
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            background-color: var(--n8n-accent);
-            border-radius: 50%;
-            box-shadow: 0 0 10px var(--n8n-accent);
-        }
-
-        .bio-summary {
-            font-size: 1.05rem;
-            color: var(--text-muted);
-            max-width: 760px;
-            line-height: 1.7;
-            margin-bottom: 1.5rem;
-        }
-
-        .bio-summary strong {
-            color: var(--text-main);
-        }
-
-        .nav-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-        }
-
-        .nav-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            color: var(--text-main);
-            text-decoration: none;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            padding: 0.45rem 0.9rem;
-            border-radius: 6px;
-            font-size: 0.88rem;
-            font-family: var(--font-mono);
-            transition: all 0.2s ease;
-        }
-
-        .nav-link:hover {
-            border-color: var(--n8n-accent);
-            color: #ffffff;
-            background: var(--surface-hover);
-            transform: translateY(-1px);
-        }
-
-        /* Section Headings */
-        .section-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 3.5rem 0 1.5rem;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 0.75rem;
-        }
-
-        .section-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            text-transform: uppercase;
-            font-family: var(--font-mono);
-            color: var(--text-muted);
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-        }
-
-        .section-title span {
-            color: var(--n8n-accent);
-        }
-
-        /* Cards */
-        .project-card {
-            background-color: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            transition: border-color 0.25s ease;
-        }
-
-        .project-card:hover {
-            border-color: #2e3e5c;
-        }
-
-        .project-card.featured {
-            border-left: 3px solid var(--n8n-accent);
-        }
-
-        .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .project-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #ffffff;
-        }
-
-        .project-meta {
-            font-family: var(--font-mono);
-            font-size: 0.8rem;
-            color: var(--n8n-accent);
-            background: rgba(255, 109, 90, 0.1);
-            padding: 0.2rem 0.55rem;
-            border-radius: 4px;
-            border: 1px solid rgba(255, 109, 90, 0.2);
-        }
-
-        .tech-pill-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem;
-            margin-bottom: 1.25rem;
-        }
-
-        .tech-pill {
-            font-family: var(--font-mono);
-            font-size: 0.75rem;
-            color: var(--tag-text);
-            background: var(--tag-bg);
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            border: 1px solid #243049;
-        }
-
-        .project-desc {
-            color: #c9d1d9;
-            font-size: 0.96rem;
-            line-height: 1.7;
-            margin-bottom: 1.25rem;
-        }
-
-        .project-desc p {
-            margin-bottom: 0.6rem;
-        }
-
-        .project-desc ul {
-            margin-left: 1.25rem;
-            margin-top: 0.4rem;
-        }
-
-        .project-desc li {
-            margin-bottom: 0.45rem;
-        }
-
-        .code-inline {
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            background: #1c2438;
-            color: #ffb86c;
-            padding: 0.15rem 0.35rem;
-            border-radius: 4px;
-            border: 1px solid #283754;
-        }
-
-        /* Asset Views */
-        .asset-container {
-            margin-top: 1.25rem;
-        }
-
-        .asset-frame {
-            border-radius: 6px;
-            overflow: hidden;
-            border: 1px solid var(--border);
-            background-color: #0b0f17;
-            margin-bottom: 0.8rem;
-        }
-
-        .asset-frame img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .asset-caption {
-            font-size: 0.82rem;
-            color: var(--text-muted);
-            font-family: var(--font-mono);
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        /* Responsive Gallery for Apple Deck */
-        .hardware-gallery {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.8rem;
-            margin-top: 1rem;
-        }
-
-        .hardware-gallery .asset-frame {
-            margin-bottom: 0;
-        }
-
-        .hardware-gallery img {
-            height: 200px;
-            object-fit: cover;
-        }
-
-        /* Outbound Link */
-        .action-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.35rem;
-            color: var(--accent-blue);
-            text-decoration: none;
-            font-size: 0.88rem;
-            font-family: var(--font-mono);
-            border-bottom: 1px dashed var(--accent-blue);
-            padding-bottom: 2px;
-            margin-top: 0.4rem;
-        }
-
-        .action-link:hover {
-            color: #8ac0ff;
-            border-bottom-style: solid;
-        }
-
-        /* Footer */
-        footer {
-            margin-top: 5rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border);
-            text-align: center;
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            font-family: var(--font-mono);
-        }
-
-        @media (max-width: 650px) {
-            h1 { font-size: 1.85rem; }
-            .container { padding: 2rem 1rem 4rem; }
-            .hardware-gallery { grid-template-columns: 1fr; }
-            .project-card { padding: 1.25rem; }
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: var(--font-sans); background-color: var(--bg); color: var(--text-main); line-height: 1.6; padding: 0; margin: 0; -webkit-font-smoothing: antialiased; }
+        .container { max-width: 920px; margin: 0 auto; padding: 3.5rem 1.5rem 6rem; }
+        header { border-bottom: 1px solid var(--border); padding-bottom: 2.5rem; margin-bottom: 3rem; }
+        .header-top { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem; }
+        h1 { font-size: 2.35rem; font-weight: 700; letter-spacing: -0.03em; color: #ffffff; margin-bottom: 0.35rem; }
+        .title-badge { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--n8n-accent); font-family: var(--font-mono); font-size: 0.95rem; font-weight: 600; margin-bottom: 1rem; }
+        .title-badge::before { content: ""; display: inline-block; width: 8px; height: 8px; background-color: var(--n8n-accent); border-radius: 50%; box-shadow: 0 0 10px var(--n8n-accent); }
+        .bio-summary { font-size: 1.05rem; color: var(--text-muted); max-width: 760px; line-height: 1.7; margin-bottom: 1.5rem; }
+        .bio-summary strong { color: var(--text-main); }
+        .nav-links { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+        .nav-link { display: inline-flex; align-items: center; gap: 0.4rem; color: var(--text-main); text-decoration: none; background: var(--surface); border: 1px solid var(--border); padding: 0.45rem 0.9rem; border-radius: 6px; font-size: 0.88rem; font-family: var(--font-mono); transition: all 0.2s ease; }
+        .nav-link:hover { border-color: var(--n8n-accent); color: #ffffff; background: var(--surface-hover); transform: translateY(-1px); }
+        .section-header { display: flex; align-items: center; justify-content: space-between; margin: 3.5rem 0 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.75rem; }
+        .section-title { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.02em; text-transform: uppercase; font-family: var(--font-mono); color: var(--text-muted); display: flex; align-items: center; gap: 0.6rem; }
+        .section-title span { color: var(--n8n-accent); }
+        .project-card { background-color: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 2rem; transition: border-color 0.25s ease; }
+        .project-card:hover { border-color: #2e3e5c; }
+        .project-card.featured { border-left: 3px solid var(--n8n-accent); }
+        .project-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem; }
+        .project-title { font-size: 1.3rem; font-weight: 600; color: #ffffff; }
+        .project-meta { font-family: var(--font-mono); font-size: 0.8rem; color: var(--n8n-accent); background: rgba(255, 109, 90, 0.1); padding: 0.2rem 0.55rem; border-radius: 4px; border: 1px solid rgba(255, 109, 90, 0.2); }
+        .tech-pill-list { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.25rem; }
+        .tech-pill { font-family: var(--font-mono); font-size: 0.75rem; color: var(--tag-text); background: var(--tag-bg); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid #243049; }
+        .project-desc { color: #c9d1d9; font-size: 0.96rem; line-height: 1.7; margin-bottom: 1.25rem; }
+        .project-desc p { margin-bottom: 0.6rem; }
+        .project-desc ul { margin-left: 1.25rem; margin-top: 0.4rem; }
+        .project-desc li { margin-bottom: 0.45rem; }
+        .code-inline { font-family: var(--font-mono); font-size: 0.85rem; background: #1c2438; color: #ffb86c; padding: 0.15rem 0.35rem; border-radius: 4px; border: 1px solid #283754; }
+        .asset-container { margin-top: 1.25rem; }
+        .asset-frame { border-radius: 6px; overflow: hidden; border: 1px solid var(--border); background-color: #0b0f17; margin-bottom: 0.8rem; }
+        .asset-frame img { width: 100%; height: auto; display: block; }
+        .asset-caption { font-size: 0.82rem; color: var(--text-muted); font-family: var(--font-mono); text-align: center; margin-bottom: 1rem; }
+        .hardware-gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem; margin-top: 1rem; }
+        .hardware-gallery .asset-frame { margin-bottom: 0; }
+        .hardware-gallery img { height: 200px; object-fit: cover; }
+        .action-link { display: inline-flex; align-items: center; gap: 0.35rem; color: var(--accent-blue); text-decoration: none; font-size: 0.88rem; font-family: var(--font-mono); border-bottom: 1px dashed var(--accent-blue); padding-bottom: 2px; margin-top: 0.4rem; }
+        .action-link:hover { color: #8ac0ff; border-bottom-style: solid; }
+        footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center; font-size: 0.85rem; color: var(--text-muted); font-family: var(--font-mono); }
+        @media (max-width: 650px) { h1 { font-size: 1.85rem; } .container { padding: 2rem 1rem 4rem; } .hardware-gallery { grid-template-columns: 1fr; } .project-card { padding: 1.25rem; } }
     </style>
 </head>
 <body>
@@ -333,7 +71,7 @@
             <div class="header-top">
                 <div>
                     <h1>James Coll Manson</h1>
-                    <div class="title-badge">Forward Deployed &amp; Systems Engineer</div>
+                    <div class="title-badge">AI Workflow &amp; Systems Engineer</div>
                 </div>
                 <nav class="nav-links">
                     <a class="nav-link" href="mailto:jamesmanson34@gmail.com">Email</a>
@@ -342,7 +80,7 @@
                 </nav>
             </div>
             <p class="bio-summary">
-                Forward Deployed Engineer specializing in <strong>n8n workflow orchestration</strong>, complex enterprise API integration, and bare-metal infrastructure. I embed into ambiguous operational environments to diagnose bottlenecks, design resilient distributed pipelines, and deliver self-service tools that empower both technical and non-technical stakeholders.
+                AI Workflow Engineer specializing in <strong>n8n workflow orchestration</strong>, complex enterprise API integration, and sovereign bare-metal infrastructure (OpenWebUI, Vector DBs). I embed into ambiguous operational environments to diagnose bottlenecks, design resilient distributed pipelines, and bridge the gap between software platforms and physical automotive systems.
             </p>
         </header>
 
@@ -360,15 +98,15 @@
             <div class="tech-pill-list">
                 <span class="tech-pill">n8n Orchestration</span>
                 <span class="tech-pill">Gemini Multimodal</span>
+                <span class="tech-pill">LlamaParse</span>
                 <span class="tech-pill">HubSpot v4 API</span>
                 <span class="tech-pill">sendAndWait Gate</span>
-                <span class="tech-pill">Graph API</span>
                 <span class="tech-pill">JavaScript Code Nodes</span>
             </div>
             <div class="project-desc">
                 <p>Architected and scaled a mission-critical commercial auto insurance ingestion pipeline in n8n from a single carrier prototype to a fault-tolerant multi-carrier production system across Berkley Environmental, Berkley Southeast, Ascot, Everest, and Oryx:</p>
                 <ul>
-                    <li><strong>Dynamic Multimodal Extraction:</strong> Ingests policy quote packages via Outlook triggers, routing multi-page PDFs to Gemini with carrier-specific extraction prompts and three-way confidence matching (Jaccard + state/domain scoring).</li>
+                    <li><strong>Dynamic Multimodal Extraction:</strong> Ingests policy quote packages via Outlook triggers, routing multi-page PDFs through LlamaParse and Gemini with carrier-specific extraction prompts and three-way confidence matching (Jaccard + state/domain scoring).</li>
                     <li><strong>Human-in-the-Loop CRM Integrity:</strong> Bypassed brittle direct writes by engineering native <span class="code-inline">sendAndWait</span> approval gates that display a live visual diff between existing HubSpot records and extracted entities before persisting state.</li>
                     <li><strong>Advanced CRM Relational Mapping:</strong> Leveraged direct HTTP Request nodes over legacy abstraction nodes to implement HubSpot v4 labeled contact associations (<span class="code-inline">Wholesale Broker</span>, <span class="code-inline">Retail Agent</span>, <span class="code-inline">Underwriter</span>) with dynamic runtime label discovery.</li>
                 </ul>
@@ -393,7 +131,6 @@
                 <ul>
                     <li><strong>Resumable Cursor Orchestration:</strong> Enumerated ~25,000 executive emails down to ~3,700 quote candidates, persisting progress in an n8n Data Table cursor to guarantee zero state loss across restarts.</li>
                     <li><strong>Exchange &amp; Concurrency Resilience:</strong> Solved Exchange 503 errors using two-phase metadata-then-body fetches with text-body headers, and eliminated <span class="code-inline">429 MailboxConcurrency</span> throttles through deterministic 800ms pacing and single-batch execution.</li>
-                    <li><strong>Batch Reconciliation:</strong> Implemented HTTP pagination, v4 association batch reads, and automated deterministic validation rules that suppress write operations on anomaly detection.</li>
                 </ul>
             </div>
         </article>
@@ -420,27 +157,6 @@
             </div>
         </article>
 
-        <!-- Orion DriveSafe APK Release -->
-        <article class="project-card">
-            <div class="project-header">
-                <h2 class="project-title">DriveSafe Mobile Deployment &amp; GitHub Actions CI/CD</h2>
-                <span class="project-meta">Release Automation</span>
-            </div>
-            <div class="tech-pill-list">
-                <span class="tech-pill">n8n Webhooks</span>
-                <span class="tech-pill">GitHub Actions API</span>
-                <span class="tech-pill">SafeLinks Regex Parser</span>
-                <span class="tech-pill">Google Play Delivery</span>
-            </div>
-            <div class="project-desc">
-                <p>Built an automated release ingestion pipeline connecting partner distribution updates to continuous deployment:</p>
-                <ul>
-                    <li>Parses release emails, unwrapping Microsoft SafeLinks and awstrack redirects via regex to extract raw binary payloads.</li>
-                    <li>Gates release execution through an Outlook <span class="code-inline">sendAndWait</span> stakeholder approval step before dispatching a <span class="code-inline">workflow_dispatch</span> event to GitHub Actions for Google Play publishing.</li>
-                </ul>
-            </div>
-        </article>
-
         <!-- SECTION 2: APPLIED AI & AUTONOMOUS SYSTEMS -->
         <div class="section-header">
             <div class="section-title"><span>02 //</span> Applied AI &amp; Infrastructure Projects</div>
@@ -454,13 +170,13 @@
             </div>
             <div class="tech-pill-list">
                 <span class="tech-pill">n8n Workflow Engine</span>
-                <span class="tech-pill">Local Inference (Ollama)</span>
-                <span class="tech-pill">Vector Embeddings</span>
-                <span class="tech-pill">SQL Database</span>
+                <span class="tech-pill">OpenWebUI / Ollama</span>
+                <span class="tech-pill">Vector Embeddings (Pinecone/ChromaDB)</span>
+                <span class="tech-pill">PostgreSQL</span>
                 <span class="tech-pill">NVIDIA RTX 3090</span>
             </div>
             <div class="project-desc">
-                <p>Architected an air-gapped, zero-cloud security monitoring pipeline running completely on local workstation hardware. Rather than relying on simple pixel-based motion triggers, the architecture uses vector embeddings to map "Pattern of Life" baselines, filtering out 99% of false alerts before generating actionable tactical intelligence reports.</p>
+                <p>Architected an air-gapped, zero-cloud security monitoring pipeline running completely on local workstation hardware (MegaMainframe). Rather than relying on simple pixel-based motion triggers, the architecture leverages vector databases for semantic retrieval to map "Pattern of Life" baselines, filtering out 99% of false alerts before generating actionable tactical intelligence reports.</p>
             </div>
 
             <div class="asset-container">
@@ -473,11 +189,6 @@
                     <img src="terminal.jpeg" alt="Project Sentinel Local Inference Execution" loading="lazy">
                 </div>
                 <div class="asset-caption">Bare-metal local inference monitoring and CUDA telemetry on Ubuntu</div>
-
-                <div class="asset-frame">
-                    <img src="intel.png" alt="Project Sentinel Tactical SITREP Output" loading="lazy">
-                </div>
-                <div class="asset-caption">Synthesized intelligence SITREP pushed directly to operational Discord webhooks</div>
             </div>
         </article>
 
@@ -489,15 +200,13 @@
             </div>
             <div class="tech-pill-list">
                 <span class="tech-pill">Python</span>
+                <span class="tech-pill">Anthropic Claude API</span>
                 <span class="tech-pill">Dynamic Sampling</span>
                 <span class="tech-pill">Confidence Scoring</span>
                 <span class="tech-pill">Local LLMs</span>
             </div>
             <div class="project-desc">
                 <p>Engineered an inference control wrapper to overcome hallucination and flawed reasoning branches in compressed, small-parameter models. Implemented dynamic temperature-flipping and multi-path confidence verification to force models through structured self-evaluation, boosting accuracy by 35% on complex deductive problem sets.</p>
-                <a class="action-link" href="https://medium.com/@collofthewild/i-couldnt-remember-who-starred-in-the-love-guru-so-i-built-a-system-2-for-my-local-llm-57392da6ac29" target="_blank" rel="noopener">
-                    Read the architectural breakdown on Medium &rarr;
-                </a>
             </div>
         </article>
 
@@ -505,6 +214,24 @@
         <div class="section-header">
             <div class="section-title"><span>03 //</span> Edge Hardware &amp; Embedded Systems</div>
         </div>
+        
+        <!-- Automotive Autonomy -->
+        <article class="project-card">
+            <div class="project-header">
+                <h2 class="project-title">CAN Bus Edge Integration &amp; Automotive Autonomy</h2>
+                <span class="project-meta">Vehicle Systems Integration</span>
+            </div>
+            <div class="tech-pill-list">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Anthropic Claude API</span>
+                <span class="tech-pill">CAN Bus (High/Low)</span>
+                <span class="tech-pill">openpilot / sunnypilot</span>
+                <span class="tech-pill">12V Automotive Logic</span>
+            </div>
+            <div class="project-desc">
+                <p>Bridged software AI deployment with physical automotive networks by engineering custom diagnostic mode overrides for a 2022 Toyota Prius Prime equipped with a Comma 4 device. Utilized Anthropic's Claude to rapidly prototype Python scripts that injected diagnostic commands directly over the vehicle's CAN bus, actively manipulating real-time hardware states and evaluating Driver Support Unit (DSU) bypass logic to enable longitudinal autonomy.</p>
+            </div>
+        </article>
 
         <!-- Apple Deck -->
         <article class="project-card">
@@ -527,16 +254,10 @@
                     <img src="fusion.png" alt="CAD Chassis Design in Fusion 360" loading="lazy">
                 </div>
                 <div class="asset-frame">
-                    <img src="inside.jpg" alt="Logic Board and Power Assembly" loading="lazy">
-                </div>
-                <div class="asset-frame">
-                    <img src="grill.jpg" alt="Custom Fan Grill and Port Inset" loading="lazy">
-                </div>
-                <div class="asset-frame">
                     <img src="running.jpg" alt="Completed Assembled Apple Deck System" loading="lazy">
                 </div>
             </div>
-            <div class="asset-caption" style="margin-top: 0.6rem;">Chassis design in CAD, internal harness wiring, and final functional cyberdeck</div>
+            <div class="asset-caption" style="margin-top: 0.6rem;">Chassis design in CAD and final functional cyberdeck</div>
         </article>
 
         <footer>
